@@ -2,4 +2,5 @@
 <p>Phone: <%= @restaurant.phone_number %></p>
 <p>Address: <%= @restaurant.address %></p>
 <p>Categroy: <%= @restaurant.category.capitalize %></p>
+<%= link_to "New review", new_restaurant_review_path(@restaurant) %>
 <%= link_to "Back", restaurants_path %>
